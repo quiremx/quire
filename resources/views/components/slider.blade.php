@@ -12,21 +12,13 @@
 
 </head>
 <body class="bg-gray-50 min-h-screen overflow-hidden">
-    <div class="lg:hidden text-start p-5 pb-0">
-        <button type="button" class="py-2 px-3 inline-flex justify-center items-center gap-x-2 text-start bg-gray-800 border border-gray-800 text-white text-sm font-medium rounded-lg shadow-sm align-middle hover:bg-gray-950 focus:outline-none focus:bg-gray-900" aria-haspopup="dialog" aria-expanded="false" aria-controls="hs-sidebar-footer" aria-label="Toggle navigation" data-hs-overlay="#hs-sidebar-footer">
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-          </svg>
-        </button>
-      </div>
-
-  <div id="hs-sidebar-footer" class="hs-overlay [--auto-close:lg] lg:block lg:translate-x-0 lg:end-auto lg:bottom-0 w-64
-  hs-overlay-open:translate-x-0
-  -translate-x-full transition-all duration-300 transform
-  h-full
-  hidden
-  fixed top-0 start-0 bottom-0 z-[60]
-  bg-white border-e border-gray-200" role="dialog" tabindex="-1" aria-label="Sidebar" >
+      <x-menu-movil></x-menu-movil>
+      <div id="hs-sidebar-footer" class="hs-overlay [--auto-close:lg] lg:block lg:translate-x-0 lg:end-auto lg:bottom-0 w-64
+      hs-overlay-open:translate-x-0
+      -translate-x-full transition-all duration-300 transform
+      h-full
+      fixed top-0 start-0 bottom-0 z-[60]
+      bg-white border-e border-gray-200" role="dialog" tabindex="-1" aria-label="Sidebar">
     <div class="relative flex flex-col h-full max-h-full ">
         <header class="p-4 flex mt-5 items-center gap-x-2">
             <img class="size-8" src="{{ Vite::asset('resources/assets/logo.png') }}" alt="quirepay">
@@ -119,7 +111,7 @@
                   Perfil
                 </a>
                 <a class="flex items-center gap-x-3 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none focus:outline-none focus:bg-gray-100" href="#">
-                  Configuraciones
+                  Soporte
                 </a>
                 <a class="flex items-center gap-x-3 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none focus:outline-none focus:bg-gray-100" href="#">
                   Cerrar sesion
@@ -130,17 +122,24 @@
         </footer>
     </div>
   </div>
-  <main class="flex min-h-screen sticky top-0 z-10 p-2">
+  <main class="flex min-h-screen sticky top-0  p-2 mb-16">
     <div class="hidden lg:block w-64 p-6">
     </div>
 
-    <div class="flex-1 bg-gray-50 p-6 ">
+    <div class="flex-1 bg-gray-50 p-6 mt-3 ">
         {{ $slot }}
     </div>
-</main>
-
 </main>
 
 
 </body>
 </html>
+
+
+{{-- <div class="lg:hidden text-start p-5 pb-0 hidden md:block lg-block">
+        <button type="button" class="py-2 px-3 inline-flex justify-center items-center gap-x-2 text-start bg-gray-800 border border-gray-800 text-white text-sm font-medium rounded-lg shadow-sm align-middle hover:bg-gray-950 focus:outline-none focus:bg-gray-900" aria-haspopup="dialog" aria-expanded="false" aria-controls="hs-sidebar-footer" aria-label="Toggle navigation" data-hs-overlay="#hs-sidebar-footer">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+</div> --}}

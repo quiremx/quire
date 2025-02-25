@@ -19,7 +19,9 @@
         "@preline/dropdown": "^2.5.2",
         "@preline/overlay": "^2.5.2",
         "alpinejs": "^3.14.8",
+        "apexcharts": "^3.54.1",
         "font-awesome": "^4.7.0",
+        "lodash": "^4.17.21",
         "preline": "^2.7.0"
     }
 }

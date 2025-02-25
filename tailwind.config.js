@@ -10,17 +10,18 @@ export default {
         './resources/**/*.vue',
         'node_modules/preline/dist/*.js',
         './src/**/*.{html,js,jsx,ts,tsx}',
-
     ],
     theme: {
         extend: {
             fontFamily: {
                 sans: ['Figtree', ...defaultTheme.fontFamily.sans],
             },
+            colors: {
+                quire: '#feea00', 
+            },
         },
     },
     plugins: [
         require('preline/plugin'),
-
     ],
 };

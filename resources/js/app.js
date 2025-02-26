@@ -1,5 +1,10 @@
 import './bootstrap';
 import 'preline'
+import Alpine from 'alpinejs';
+
+window.Alpine = Alpine;
+Alpine.start();
+
 import ApexCharts from "apexcharts";
 import _ from "lodash";
 import "preline/dist/helper-apexcharts"; 
@@ -66,3 +71,4 @@ document.addEventListener("DOMContentLoaded", function () {
     const chart = new ApexCharts(document.querySelector("#hs-multiple-line-charts"), options);
     chart.render();
 });
+

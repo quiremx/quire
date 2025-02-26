@@ -39,7 +39,7 @@
                 </x-nav-menu>
               </li>
               <li>
-                <x-nav-menu href="/cuenta" :active="request()->is ('transferencias')">
+                <x-nav-menu href="/cuenta" :active="request()->is ('cuenta')">
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#000" d="M5 5h13a3 3 0 0 1 3 3v9a3 3 0 0 1-3 3H5a3 3 0 0 1-3-3V8a3 3 0 0 1 3-3m0 1a2 2 0 0 0-2 2v1h17V8a2 2 0 0 0-2-2zM3 17a2 2 0 0 0 2 2h13a2 2 0 0 0 2-2v-5H3zm2-1h4v1H5zm6 0h3v1h-3zm-8-6v1h17v-1z"/></svg>                    Cuenta virtual
                 </x-nav-menu>
               </li>
@@ -101,11 +101,11 @@
         </footer>
     </div>
   </div>
-  <main class="flex min-h-screen sticky top-0 p-2 mb-16">
+  <main class="flex min-h-screen sticky top-0 p-2 mb-10">
     <div class="hidden lg:block w-64 p-6">
     </div>
 
-    <div class="flex-1 bg-gray-50 p-6 mt-3 ">
+    <div class="flex-1 bg-gray-50 p-4  ">
         {{ $slot }}
     </div>
 </main>

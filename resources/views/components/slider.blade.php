@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ $title ?? 'Dashboard' }}</title>
-    <link rel="shortcut icon" href="{{ Vite::asset('resources/img/logo.png') }}" type="image/x-icon">
+    <link rel="shortcut icon" href="{{ Vite::asset('resources/img/logotipo.png') }}" type="image/x-icon">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
     @vite(['resources/css/app.css', 'resources/js/app.js'])
@@ -20,7 +20,7 @@
       bg-white border-e border-gray-200" role="dialog" tabindex="-1" aria-label="Sidebar">
     <div class="relative flex flex-col h-full max-h-full ">
         <header class="p-4 flex mt-5 items-center gap-x-2">
-            <img class="size-8" src="{{ Vite::asset('resources/img/logo.png') }}" alt="quirepay">
+            <img class="size-8" src="{{ Vite::asset('resources/img/logotipo.png') }}" alt="quirepay">
             <span class="font-bold text-2xl ">Quire Pay</span>
           <div class="lg:hidden -me-2">
             <button type="button" class="flex justify-center items-center gap-x-3 size-6 bg-white border border-gray-200 text-sm text-gray-600 hover:bg-gray-100 rounded-full disabled:opacity-50 disabled:pointer-events-none focus:outline-none focus:bg-gray-100" data-hs-overlay="#hs-sidebar-footer">

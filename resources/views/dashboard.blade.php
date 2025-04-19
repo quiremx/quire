@@ -39,19 +39,19 @@
         <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
           <a href="/transferencias">
             <div class="bg-white text-gray-900 p-4 rounded-xl shadow-md hover:shadow-lg transition transform hover:scale-105 border-2 border-yellow-300/50 hover:bg-quire hover:border-gray-700">
-                <img src="{{ Vite::asset('resources/assets/transferencia-de-dinero.png') }}" alt="payments-icon" class="w-12 h-12 mx-auto mb-4" />
+                <img src="{{ Vite::asset('resources/img/transferencia-de-dinero.png') }}" alt="payments-icon" class="w-12 h-12 mx-auto mb-4" />
                 <p class="text-lg text-center font-semibold text-accent">Transferencias</p>
               </div>
           </a>
             <a href="/pagosyservicios">
                 <div class="bg-white p-4 rounded-xl shadow-md hover:shadow-lg transition transform hover:scale-105 border-2 border-yellow-300/50 hover:bg-quire hover:border-gray-700">
-                    <img src="{{ Vite::asset('resources/assets/pagoss.png') }}" alt="payments-icon" class="w-12 h-12 mx-auto mb-4" />
+                    <img src="{{ Vite::asset('resources/img/pagoss.png') }}" alt="payments-icon" class="w-12 h-12 mx-auto mb-4" />
                     <p class="text-lg text-center font-semibold text-accent">Pagos y servicios</p>
                 </div>
             </a>
             <a href="/historial">
                 <div class="bg-white p-4  text-gray-900 rounded-xl shadow-md hover:shadow-lg transition transform hover:scale-105 border-2 border-yellow-300/50 hover:bg-quire hover:border-gray-700">
-                    <img src="{{ Vite::asset('resources/assets/ejecutivo.png') }}" alt="history-icon" class="w-12 h-12 mx-auto mb-4" />
+                    <img src="{{ Vite::asset('resources/img/ejecutivo.png') }}" alt="history-icon" class="w-12 h-12 mx-auto mb-4" />
                     <p class="text-lg text-center font-semibold text-accent">Resumen de Transacciones</p>
                 </div>
             </a>

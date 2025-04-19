@@ -93,7 +93,7 @@
     </div>
     <x-card-tarjetas
     :url_card="'#'"
-    :image="Vite::asset('resources/assets/tarjeta.png')" 
+    :image="Vite::asset('resources/img/tarjeta.png')" 
     :cardNumber="'**** **** **** 4560'" 
     :balance="'$23 000.00'"
     :url_edit="'/editar/tarjeta/4560'"
@@ -101,7 +101,7 @@
 />
 <x-card-tarjetas
     :url_card="'#'"
-    :image="Vite::asset('resources/assets/tarjeta.png')" 
+    :image="Vite::asset('resources/img/tarjeta.png')" 
     :cardNumber="'**** **** **** 4560'" 
     :balance="'$23 000.00'"
     :url_edit="'/editar/tarjeta/4560'"
